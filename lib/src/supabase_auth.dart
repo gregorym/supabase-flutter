@@ -304,6 +304,7 @@ extension GoTrueClientSignInProvider on GoTrueClient {
       queryParams: queryParams,
     );
     final uri = Uri.parse(res.url!);
+    print("oauth uri: $uri");
 
     bool? result;
     if (authScreenLaunchMode == LaunchMode.inAppWebView &&
